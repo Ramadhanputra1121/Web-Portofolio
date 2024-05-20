@@ -102,8 +102,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const dropdownFilter = document.getElementById("dropdownFilter");
   const filterButtons = document.querySelectorAll(".dropdown-item");
 
-  dropdownFilter.addEventListener("click", function() {
-  });
+    dropdownFilter.addEventListener("click", function() {
+        const filterButtons = document.querySelectorAll(".dropdown-item");
+        filterButtons.forEach(button => {
+            const filter = button.dataset.filter;
+            dropdownFilter.innerHTML = `<i class="bi bi-funnel-fill"></i> ${button.textContent}`;
+            filterCards(filter);
+        });
+    });
 
   filterButtons.forEach(button => {
       button.addEventListener("click", function() {
