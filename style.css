@@ -92,3 +92,7 @@ footer {
 .tabs-panel.active {
   display: block;
 }
+
+#card {
+background-color: #007267;
+}
