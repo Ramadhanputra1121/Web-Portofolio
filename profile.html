@@ -448,7 +448,7 @@
                                         <img src="asset/img/inggris.png" alt="Description" class="img-fluid mb-3"
                                             style="width: 100px;">
                                         <div class="text-secondary fw-bolder mb-2 text-animation">Bahasa Inggris</div>
-                                        <div class="small text-muted" style="margin-top: 5px;"> (Intermediete)</div>
+                                        <div class="small text-muted" style="margin-top: 5px;"> (intermediate)</div>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +458,7 @@
             </div>
         </section>
         <section>
-            <div class="container py-5">
+            <div class="container">
                 <h5 class="fw-bolder pb-2" style="text-align: center;">Mari kunjungi Sosial Media saya</h5>
                 <a href="https://linktr.ee/ramadhanputra1121" target="_blank"><img src="/asset/img/Linktree.png" alt=""
                         width="150px"
@@ -467,8 +467,9 @@
         </section>
         <section>
             <div class="container py-5">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    style="position: fixed; bottom: 50px; right: 30px; border-radius: 20px; font-size: 20px;"><i class="fas fa-envelope"></i></button>
+                <button type="button" class="btn btn-primary text-animation" data-bs-toggle="modal" data-bs-target="#contactModal"
+                    style="position: fixed; bottom: 50px; right: 30px; border-radius: 20px; font-size: 20px;"><i
+                        class="fas fa-envelope"></i></button>
             </div>
 
             <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
@@ -476,26 +477,32 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header" style="background-color: #007267;">
-                            <h5 class="modal-title" id="contactModalLabel" >Send us a message</h5>
+                            <h5 class="modal-title" id="contactModalLabel">Kirimkan pesan anda</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" style="background-color: #007F73;">
                             <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+                                <!-- Name input-->
+                                <div class="form-floating mb-3 box-icon">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                        required />
+                                    <label class="text-dark" for="name">Nama Lengkap</label>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3 box-icon">
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                        required />
+                                    <label class="text-dark" for="email">Alamat Email</label>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5"
-                                        required></textarea>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3 box-icon">
+                                    <textarea class="form-control" id="message" placeholder="Enter your message here..."
+                                        style="height: 10rem" required></textarea>
+                                    <label class="text-dark" for="message">Pesan</label>
                                 </div>
-                                <button id="submitButton" type="submit" class="btn btn-primary"
-                                    formenctype="text/plain">Send</button>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary btn-lg box-icon" id="submitButton"
+                                        type="button">Kirim</button></div>
                             </form>
                         </div>
                     </div>
