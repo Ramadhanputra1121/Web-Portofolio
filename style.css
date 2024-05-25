@@ -17,6 +17,15 @@ html {
   transform: scale(1.05);
 }
 
+.project-link {
+  color: aqua;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: red;
+}
+
 footer {
   bottom: 0;
   width: 100%;
